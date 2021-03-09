@@ -1,21 +1,78 @@
-.container-fluid {
-  height: 7%;
-  background-color: #037367;
-  position: fixed;
+body {
+  background-image: url('../img/bg-main@2x.png');
+  background-attachment: scroll;
+  font-family: montserrat, sans-serif;
+  font-weight: 600;
+  font-style: normal;
 }
 
-.d-flex > div {
+h4 {
+  color: #E91E50;
+  letter-spacing: 5px;
+}
+
+.nav {
+  position: fixed;
+  height: 50px;
+  background-color: #037367;
+  position: fixed;
+  padding-right: 0px;
+  z-index: 1;
+}
+
+.menu-icon {
+  padding-top: 5px;
+  padding-left: 10px;
+}
+
+.search-icon {
+  padding-top: 5px;
+  padding-right: 10px;
+}
+
+.d-flex>div {
   height: 100%;
   width: 50px;
   font-size: 28px;
   color: white;
   justify-content: center;
+  margin: 0 auto;
 }
-.d-flex > .logo {
+
+.d-flex>.logo {
   text-align: center;
 }
-.d-flex > .search-icon {
+
+.d-flex>.search-icon {
   text-align: right;
+}
+
+.welly-logo {
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 55px;
+}
+
+.welly-logo h1 {
+  letter-spacing: 5px;
+}
+
+.slide, .current-events, .map {
+  padding-top: 10px;
+  text-align: center;
+}
+
+.current-events .card {
+  margin: 0 auto;
+}
+
+.btn {
+  border-radius: 1rem;
+}
+
+.btn-primary {
+  background-color: #037367;
+  border-color: #037367;
 }
 
 /* X-Small devices (portrait phones, less than 576px)
