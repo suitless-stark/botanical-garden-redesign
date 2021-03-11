@@ -1,9 +1,13 @@
 body {
   background-image: url('../img/bg-main@2x.png');
-  background-attachment: scroll;
+  background-attachment: fixed;
   font-family: montserrat, sans-serif;
   font-weight: 600;
   font-style: normal;
+}
+
+body .bg-light {
+  background-color: #037367 !important;
 }
 
 h4 {
@@ -11,58 +15,44 @@ h4 {
   letter-spacing: 5px;
 }
 
-.nav {
-  position: fixed;
-  height: 50px;
-  background-color: #037367;
-  position: fixed;
-  padding-right: 0px;
-  z-index: 1;
+li a {
+  color: white !important;
 }
 
-.menu-icon {
-  padding-top: 5px;
-  padding-left: 10px;
-}
-
-.search-icon {
-  padding-top: 5px;
-  padding-right: 10px;
-}
-
-.d-flex>div {
-  height: 100%;
-  width: 50px;
-  font-size: 28px;
+.navbar-light .navbar-toggler {
   color: white;
-  justify-content: center;
-  margin: 0 auto;
+  border-color: white;
 }
 
-.d-flex>.logo {
+.btn-outline-success {
+  color: white;
+  border-color: white;
+}
+
+.labels {
   text-align: center;
-}
-
-.d-flex>.search-icon {
-  text-align: right;
 }
 
 .welly-logo {
   margin: 0 auto;
   text-align: center;
-  padding-top: 55px;
+  padding-top: 100px;
 }
 
 .welly-logo h1 {
   letter-spacing: 5px;
 }
 
-.slide, .current-events, .map {
-  padding-top: 10px;
+.slide,
+.current-events-mobile,
+.map,
+.current-events-desktop {
+  padding-top: 20px;
+  padding-bottom: 20px;
   text-align: center;
 }
 
-.current-events .card {
+.current-events-mobile .card {
   margin: 0 auto;
 }
 
@@ -75,19 +65,31 @@ h4 {
   border-color: #037367;
 }
 
-/* X-Small devices (portrait phones, less than 576px)
-No media query for `xs` since this is the default in Bootstrap */
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {}
+/* X-Small devices (portrait phones, less than 576px) */
+@media only screen and (max-width: 575.98px) {
+  .current-events-desktop {
+    display: none;
+  }
+}
 
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {}
+/* Small devices (portrait tablets and large phones, 577px and up) */
+@media only screen and (min-width: 576.98px) {
+  .current-events-mobile {
+    display: none;
+  }
+}
 
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {}
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {}
 
-/* X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {}
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {}
 
-/* XX-Large devices (larger desktops, 1400px and up) */
-@media (min-width: 1400px) {}
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {}
+
+/* X-Large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {}
+
+/* XX-Large devices (larger desktops) */
+/* No media query since the xxl breakpoint has no upper bound on its width */
