@@ -1,27 +1,29 @@
+$primaryColor: #037367;
+$accentColor: #e91e50;
+
 body {
-  background-image: url('../img/bg-main@2x.png');
+  background-image: url("../img/bg-main@2x.png");
   background-attachment: fixed;
   font-family: montserrat, sans-serif;
   font-weight: 600;
   font-style: normal;
 }
 
-body .bg-light {
-  background-color: #037367 !important;
+body {
+  .bg-dark {
+    background-color: $primaryColor !important;
+  }
 }
 
 h4 {
-  color: #E91E50;
+  color: $accentColor;
   letter-spacing: 5px;
 }
 
-li a {
-  color: white !important;
-}
-
-.navbar-light .navbar-toggler {
-  color: white;
-  border-color: white;
+li {
+  a {
+    color: white !important;
+  }
 }
 
 .btn-outline-success {
@@ -43,10 +45,10 @@ li a {
   letter-spacing: 5px;
 }
 
-.slide,
+.current-events-desktop,
 .current-events-mobile,
 .map,
-.current-events-desktop {
+.slide {
   padding-top: 20px;
   padding-bottom: 20px;
   text-align: center;
@@ -58,11 +60,8 @@ li a {
 
 .btn {
   border-radius: 1rem;
-}
-
-.btn-primary {
-  background-color: #037367;
-  border-color: #037367;
+  background-color: $primaryColor;
+  border-color: $primaryColor;
 }
 
 /* X-Small devices (portrait phones, less than 576px) */
@@ -71,25 +70,19 @@ li a {
     display: none;
   }
 }
-
 /* Small devices (portrait tablets and large phones, 577px and up) */
 @media only screen and (min-width: 576.98px) {
   .current-events-mobile {
     display: none;
   }
 }
-
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {}
-
 /* Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {}
-
 /* Large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {}
-
 /* X-Large devices (large desktops, less than 1400px) */
 @media (max-width: 1399.98px) {}
-
 /* XX-Large devices (larger desktops) */
 /* No media query since the xxl breakpoint has no upper bound on its width */

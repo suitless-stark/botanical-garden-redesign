@@ -5,19 +5,15 @@ body {
   font-weight: 600;
   font-style: normal; }
 
-body .bg-light {
+body .bg-dark {
   background-color: #037367 !important; }
 
 h4 {
-  color: #E91E50;
+  color: #e91e50;
   letter-spacing: 5px; }
 
 li a {
   color: white !important; }
-
-.navbar-light .navbar-toggler {
-  color: white;
-  border-color: white; }
 
 .btn-outline-success {
   color: white;
@@ -34,10 +30,10 @@ li a {
 .welly-logo h1 {
   letter-spacing: 5px; }
 
-.slide,
+.current-events-desktop,
 .current-events-mobile,
 .map,
-.current-events-desktop {
+.slide {
   padding-top: 20px;
   padding-bottom: 20px;
   text-align: center; }
@@ -46,9 +42,7 @@ li a {
   margin: 0 auto; }
 
 .btn {
-  border-radius: 1rem; }
-
-.btn-primary {
+  border-radius: 1rem;
   background-color: #037367;
   border-color: #037367; }
 
