@@ -44,7 +44,12 @@ li a {
 .btn {
   border-radius: 1rem;
   background-color: #037367;
-  border-color: #037367; }
+  border-color: white; }
+
+.btn:hover {
+  color: #037367;
+  background-color: white;
+  border-color: white; }
 
 /* X-Small devices (portrait phones, less than 576px) */
 @media only screen and (max-width: 575.98px) {

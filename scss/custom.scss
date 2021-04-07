@@ -61,7 +61,13 @@ li {
 .btn {
   border-radius: 1rem;
   background-color: $primaryColor;
-  border-color: $primaryColor;
+  border-color: white;
+}
+
+.btn:hover {
+  color: $primaryColor;
+  background-color: white;
+  border-color: white;
 }
 
 /* X-Small devices (portrait phones, less than 576px) */
